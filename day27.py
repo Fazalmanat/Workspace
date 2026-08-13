@@ -18,3 +18,29 @@
 # s="Tell Me"
 # change_str(s)
 # print(s)
+
+# def hi(name):
+#     message = "Hi, " + name
+#     return message
+# name=input("Enter Name : ")
+# print(hi(name))
+
+# def simple_interest(p,t,r):
+#     return(p*t*r)/100
+# p=float(input("Enter the Principal amount : "))
+# t=float(input("Enter the Time passed in Years: "))
+# r=float(input("Enter the rate of interest : "))
+# print("Simple Interest : ",simple_interest(p,t,r))
+
+# def printIt(name,age=22):
+#     print(" name : ",name,"\nage : ",age)
+# printIt("Fazal")
+
+# def printAll(*names):
+#     for i in names:
+#         print(i)
+# printAll("John","Wick")
+
+# def printKey(name,message):
+#     print(name , " and ", message)
+# printKey(name="him",message="ba")
