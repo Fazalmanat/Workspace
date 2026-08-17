@@ -27,22 +27,23 @@
 #     print(max(a,b,c))
 # LargeOfThree(5,8,9)
 
-# def Greetings():
-#     print("Good Morning ^-^")
+def Greetings():
+    print("Good Morning ^-^")
 # Greetings()
 
 # def student(name,age):
 #     print("I am ",name," and my age is ",age)
 # student(name="Fazal",age=23)
 
-# def Largest(*args):
+# def largest(*args):
 #     print(max(args))
-# Largest(1,2,3,4,5,6,7,8)
+# largest(1,2,3,4,5,6,7,8)
 
 # def empData(**kwargs):
 #     print(kwargs)
 # empData(emp1="Fazal",dep="IT")
 
-# def square(a):
-#     return a*a
-# print(square(2))
+def square(a):
+    return a*a
+
+print("This is in day28,not supposed to be print... or not i guess")
