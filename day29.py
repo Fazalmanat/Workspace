@@ -9,4 +9,4 @@
 
 import datetime
 x=datetime.datetime(2003,3,29)
-print(x)
+print(x.strftime("%j"))
