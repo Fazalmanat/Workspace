@@ -10,3 +10,8 @@
 import datetime
 x=datetime.datetime(2003,3,29)
 print(x.strftime("%j"))
+
+import time
+time.sleep(10)
+t=time.time()
+print(t)
