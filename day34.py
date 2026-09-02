@@ -24,3 +24,9 @@
 #     f.seek(6)
 #     print(f.read())
 
+try:
+    a=1
+    b=0
+    print(a/b)
+except:
+    print("error!!")
