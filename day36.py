@@ -15,8 +15,8 @@
 # emp=Employee("njan",1)
 # emp.display()
 
-class Employee:
-    def display():
-        print("y")
-emp=Employee
-emp.display()
+# class Employee:
+#     def display():
+#         print("y")
+# emp=Employee
+# emp.display()
