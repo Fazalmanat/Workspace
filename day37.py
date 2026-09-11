@@ -61,3 +61,26 @@
 # print(isinstance(l,lecture3))
 # print(isinstance(l,lecture1))
 # print(isinstance(l,lecture2))
+
+# class Bank:
+#     def getroi(self):
+#         return 10
+# class Sbi(Bank):
+#     def getroi(self):
+#         return 9
+# class icici(Bank):
+#     def getroi(self):
+#         return 6
+# b1=Bank()
+# b2=Sbi()
+# b3=icici()
+# print(b1.getroi(),b2.getroi(),b3.getroi())
+
+class Animal:
+    def speak(self):
+        print("speaks")
+class Dog(Animal):
+    def speak(self):
+        print("barks")
+d=Dog()
+d.speak()
