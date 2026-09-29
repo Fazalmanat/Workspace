@@ -1,0 +1,212 @@
+
+============================================================
+Men's team rankings
+============================================================
+
+TEST - TEAM RANKINGS
+----------------------------------------
+POS | CHG | Team/Player | PTS
+01 |  | Australia | 126
+02 |  | South Africa | 119
+03 |  | New Zealand | 106
+04 |  | India | 105
+05 |  | England | 102
+
+ODI - TEAM RANKINGS
+----------------------------------------
+POS | CHG | Team/Player | PTS
+01 |  | India | 117
+02 |  | New Zealand | 109
+03 |  | South Africa | 106
+04 | 1 | Pakistan | 100
+05 | 1 | Australia | 100
+
+T20 - TEAM RANKINGS
+----------------------------------------
+POS | CHG | Team/Player | PTS
+01 |  | India | 269
+02 |  | England | 269
+03 |  | Australia | 260
+04 |  | New Zealand | 247
+05 |  | South Africa | 243
+
+============================================================
+Men's batting rankings
+============================================================
+
+TEST - BATTING RANKINGS
+----------------------------------------
+POS | CHG | Team/Player | PTS
+01 |  | Harry Brook | 861
+02 |  | Steve Smith | 840
+03 |  | Joe Root | 816
+04 |  | Travis Head | 811
+05 |  | Temba Bavuma | 775
+
+ODI - BATTING RANKINGS
+----------------------------------------
+POS | CHG | Team/Player | PTS
+01 |  | Shubman Gill | 801
+02 |  | Daryl Mitchell | 794
+03 |  | Virat Kohli | 767
+04 |  | Rohit Sharma | 758
+05 |  | Ibrahim Zadran | 719
+
+T20 - BATTING RANKINGS
+----------------------------------------
+POS | CHG | Team/Player | PTS
+01 |  | Ishan Kishan | 904
+02 |  | Abhishek Sharma | 893
+03 |  | Sahibzada Farhan | 848
+04 | 5 | Harry Brook | 793
+05 | 2 | Jos Buttler | 789
+
+============================================================
+Men's bowling rankings
+============================================================
+
+TEST - BOWLING RANKINGS
+----------------------------------------
+POS | CHG | Team/Player | PTS
+01 |  | Mitchell Starc | 872
+02 |  | Matt Henry | 861
+03 | 2 | Ollie Robinson | 856
+04 | 1 | Jasprit Bumrah | 853
+05 | 1 | Pat Cummins | 841
+
+ODI - BOWLING RANKINGS
+----------------------------------------
+POS | CHG | Team/Player | PTS
+01 |  | Rashid Khan | 714
+02 |  | Abrar Ahmed | 675
+03 | 1 | Mitchell Santner | 644
+04 | 1 | Maheesh Theekshana | 635
+05 | 2 | Jofra Archer | 633
+
+T20 - BOWLING RANKINGS
+----------------------------------------
+POS | CHG | Team/Player | PTS
+01 | 1 | Abrar Ahmed | 736
+02 | 1 | Rashid Khan | 735
+03 | 1 | Adam Zampa | 700
+04 | 1 | Adil Rashid | 695
+05 | 1 | Nathan Ellis | 675
+
+============================================================
+Men's all-rounder rankings
+============================================================
+
+TEST - ALLROUNDER RANKINGS
+----------------------------------------
+POS | CHG | Team/Player | PTS
+01 |  | Ravindra Jadeja | 422
+02 |  | Marco Jansen | 344
+03 |  | Mehidy Hasan Miraz | 314
+04 |  | Mitchell Starc | 276
+05 |  | Wiaan Mulder | 245
+
+ODI - ALLROUNDER RANKINGS
+----------------------------------------
+POS | CHG | Team/Player | PTS
+01 |  | Azmatullah Omarzai | 337
+02 | 1 | Sikandar Raza | 276
+03 | 1 | Mehidy Hasan Miraz | 260
+04 |  | Michael Bracewell | 250
+05 |  | Mitchell Santner | 247
+
+T20 - ALLROUNDER RANKINGS
+----------------------------------------
+POS | CHG | Team/Player | PTS
+01 |  | Sikandar Raza | 321
+02 |  | Saim Ayub | 275
+03 | 3 | Will Jacks | 257
+04 | 1 | Dipendra Singh Airee | 256
+05 |  | Azmatullah Omarzai | 251
+
+============================================================
+Women's team rankings
+============================================================
+
+ODIW - TEAM RANKINGS
+----------------------------------------
+POS | CHG | Team/Player | PTS
+01 |  | Australia | 163
+02 |  | England | 126
+03 |  | India | 124
+04 |  | South Africa | 100
+05 |  | New Zealand | 96
+
+T20W - TEAM RANKINGS
+----------------------------------------
+POS | CHG | Team/Player | PTS
+01 |  | Australia | 291
+02 |  | England | 276
+03 |  | India | 264
+04 |  | New Zealand | 249
+05 |  | South Africa | 246
+
+============================================================
+Women's batting rankings
+============================================================
+
+ODIW - BATTING RANKINGS
+----------------------------------------
+POS | CHG | Team/Player | PTS
+01 |  | Smriti Mandhana | 790
+02 |  | Laura Wolvaardt | 782
+03 |  | Beth Mooney | 744
+04 |  | Phoebe Litchfield | 709
+05 |  | Ashleigh Gardner | 696
+
+T20W - BATTING RANKINGS
+----------------------------------------
+POS | CHG | Team/Player | PTS
+01 |  | Beth Mooney | 785
+02 |  | Georgia Voll | 779
+03 |  | Laura Wolvaardt | 766
+04 | 2 | Shafali Verma | 756
+05 | 1 | Hayley Matthews | 754
+
+============================================================
+Women's bowling rankings
+============================================================
+
+ODIW - BOWLING RANKINGS
+----------------------------------------
+POS | CHG | Team/Player | PTS
+01 |  | Alana King | 753
+02 | 1 | Ashleigh Gardner | 715
+03 | 1 | Sophie Ecclestone | 696
+04 |  | Hayley Matthews | 670
+05 |  | Marizanne Kapp | 650
+
+T20W - BOWLING RANKINGS
+----------------------------------------
+POS | CHG | Team/Player | PTS
+01 |  | Sree Charani | 799
+02 |  | Deepti Sharma | 729
+03 |  | Sophie Ecclestone | 723
+04 |  | Charlie Dean | 722
+05 |  | Lauren Bell | 712
+
+============================================================
+Women's all-rounder rankings
+============================================================
+
+ODIW - ALLROUNDER RANKINGS
+----------------------------------------
+POS | CHG | Team/Player | PTS
+01 |  | Ashleigh Gardner | 497
+02 |  | Hayley Matthews | 454
+03 |  | Annabel Sutherland | 385
+04 |  | Marizanne Kapp | 367
+05 |  | Amelia Kerr | 358
+
+T20W - ALLROUNDER RANKINGS
+----------------------------------------
+POS | CHG | Team/Player | PTS
+01 |  | Hayley Matthews | 502
+02 |  | Amelia Kerr | 465
+03 |  | Chamari Athapaththu | 420
+04 |  | Orla Prendergast | 376
+05 |  | Deepti Sharma | 370
