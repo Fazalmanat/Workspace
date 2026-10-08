@@ -16,3 +16,17 @@ in urlsiin project web,add include module, in urlpatterns, add path('',include("
 
 for links, 
 path should be like path('home',home,name="home") and link like <a href="{% url 'home'%}">home</a>
+ 
+for tables,
+create class in models.py like,
+class Students(models.Model):
+    name=models.CharField(max_length=100)
+    address=models.CharField(max_length=500)
+    course=models.CharField(max_length=200)
+    batch=models.CharField(max_length=10) for example
+
+then in admin, to bring this table to admin panel,
+from .models import *
+admin.site.register(Students)
+
+each time a change is made in models run python manage.py makemigartions and python manage.py migrate
