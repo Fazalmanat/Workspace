@@ -1,9 +1,14 @@
-from django.shortcuts import render,redirect
+from django.shortcuts import render,redirect,get_object_or_404
 from .models import *
 # Create your views here.
 def index(request):
     std=Students.objects.all()
-    return render(request,'index.html',{'std':std})
+    tcr=Teachers.objects.all()
+    context={
+        'std':std,
+        'tcr':tcr
+    }
+    return render(request,'index.html',context)
 
 def home(request):
     std=Students.objects.all()
@@ -21,3 +26,30 @@ def home(request):
         )
         return redirect("home")
     return render(request,'home.html',{'std':std})
+def login(request):
+    tcr=Teachers.objects.all()
+    if request.method=='POST':
+            name=request.POST.get("name")
+            subject=request.POST.get("subject")
+            code=request.POST.get("code")
+            department=request.POST.get("department")
+            
+            Teachers.objects.create(
+                name=name,
+                code=code,
+                subject=subject,
+                department=department
+            )
+            return redirect("index")
+    return render(request,'form.html',{'tcr':tcr})
+
+def Update(request,id):
+    std=Students.get_object_or_404(id=id)
+    if request.method=='POST':
+        std.name=request.POST.get("name")
+        std.address=request.POST.get("address")
+        std.course=request.POST.get("course")
+        std.batch=request.POST.get("course")
+        std.save()
+        return redirect("index")
+    return render(request,'update.html')

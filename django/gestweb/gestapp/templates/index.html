@@ -4,8 +4,16 @@
     </head>
     <body>
         <a href="{% url 'home'%}">home</a>
+        <a href="{% url 'login'%}">login</a>
         {%for i in std%}
-        <h2>{{i.name}}</h2>
+            <h2>{{i.name}}</h2>
+        {%endfor%}
+
+        <p>next we have</p>
+
+        {%for i in tcr%}
+
+        <h1>{{i.name}}</h1>
         {%endfor%}
     </body>
 </html>
