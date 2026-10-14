@@ -1,0 +1,69 @@
+python -m venv env
+cd env/scripts/activate
+pip install Django
+python djangoadmin startproject projectname
+cd projectname
+python manage.py startapp appname
+python manage.py makepreparations
+python manage.py migrate
+python manage.py runserver
+add appname to installedapps in projectname/projectname/settings.py
+to adduser, python manage.py create superuser
+for new pages, make templates folder,in it make html file->make function in name of htmlfile in views with argument request and return request with filename.html_>
+make urls.py in app , and create urlpatterns list ->ADD  PATH TO function.
+in urlsiin project web,add include module, in urlpatterns, add path('',include("gestapp.urls")),
+
+
+for links, 
+path should be like path('home',home,name="home") and link like <a href="{% url 'home'%}">home</a>
+ 
+for tables,
+create class in models.py like,
+class Students(models.Model):
+    name=models.CharField(max_length=100)
+    address=models.CharField(max_length=500)
+    course=models.CharField(max_length=200)
+    batch=models.CharField(max_length=10) for example
+
+then in admin, to bring this table to admin panel,
+from .models import *
+admin.site.register(Students)
+
+each time a change is made in models run python manage.py makemigartions and python manage.py migrate
+
+
+to add to table via form,
+<form method="POST">!~~
+            {% csrf_token %}!~~
+            name:<input type="text" name="name"!~~><br><br>
+            course:<input type="text" name="course"><br><br>
+            address:<input type="text" name="address"><br><br>
+            batch:<input type="text" name="batch"><br><br>
+
+            <button type="submit">add</button>!~~
+
+ std=Students.objects.all()
+    if request.method=='POST':
+        name=request.POST.get("name"!~~)
+        address=request.POST.get("address")
+        course=request.POST.get("course")
+        batch=request.POST.get("batch")
+        
+        Students.objects.create(
+            !~~name=name,
+            course=course,
+            address=address,
+            batch=batch
+        )
+        return redirect("home")
+
+
+
+
+
+
+
+
+
+
+
