@@ -1,19 +1,61 @@
+{% load static %}
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>index</title>
-    </head>
-    <body>
-        <a href="{% url 'home'%}">home</a>
-        <a href="{% url 'login'%}">login</a>
-        {%for i in std%}
-            <h2>{{i.name}}</h2>
-        {%endfor%}
+<head>
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="{% url 'home' %}">Home</a>
+            <a href="{% url 'login' %}">Add Teacher</a>
+        </nav>
 
-        <p>next we have</p>
+        <h1>Student Dashboard</h1>
+        <p>Manage your students and their details.</p>
 
-        {%for i in tcr%}
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Course</th>
+                <th>Batch</th>
+                <th> </th>
+                <th> </th>
+            </tr>
 
-        <h1>{{i.name}}</h1>
-        {%endfor%}
-    </body>
+            {% for i in std %}
+            <tr>
+                <td>{{ i.name }}</td>
+                <td>{{ i.address }}</td>
+                <td>{{ i.course }}</td>
+                <td>{{ i.batch }}</td>
+                <td>
+                    <a class="action-link"
+                       href="{% url 'update' i.id %}">Update</a>
+                </td>
+                <td>
+                    <form action="{% url 'delete' i.id %}" method="POST">
+                    {% csrf_token %}
+                    <button type="submit">Delete</button>
+                    </form>
+                </td>
+            </tr>
+            {% empty %}
+            <tr>
+                <td colspan="5">No students found.</td>
+            </tr>
+            {% endfor %}
+        </table>
+
+        <h2>Teachers</h2>
+
+        {% for i in tcr %}
+            <p>{{ i.name }}</p>
+        {% empty %}
+            <p>No teachers found.</p>
+        {% endfor %}
+    </div>
+</body>
 </html>

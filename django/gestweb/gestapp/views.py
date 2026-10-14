@@ -44,12 +44,18 @@ def login(request):
     return render(request,'form.html',{'tcr':tcr})
 
 def Update(request,id):
-    std=Students.get_object_or_404(id=id)
+    std=get_object_or_404(Students,id=id)
     if request.method=='POST':
         std.name=request.POST.get("name")
         std.address=request.POST.get("address")
         std.course=request.POST.get("course")
-        std.batch=request.POST.get("course")
+        std.batch=request.POST.get("batch")
         std.save()
         return redirect("index")
     return render(request,'update.html')
+
+def Delete(request,id):
+    std=get_object_or_404(Students,id=id)
+    if request.method=='POST':
+        std.delete()
+        return redirect("index")
