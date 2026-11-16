@@ -1,0 +1,5 @@
+fixes needed
+
+handle multiple languages in a single file
+how to identify logical errors ,that is, it executed and then error in view
+

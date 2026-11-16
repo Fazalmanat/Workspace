@@ -1,0 +1,76 @@
+api by serializer
+
+from django.shortcuts import render
+from rest_framework import generics
+#from rest_framework.generics import ListCreateAPIView
+from .models import *
+from .serializers import *
+from rest_framework.views import APIView
+from rest_framework.response import Response
+from rest_framework import status
+
+
+# Create your views here.
+class PlayerListCreateAPIView(generics.ListCreateAPIView):
+    queryset=Player.objects.all()
+    serializer_class=PlayerSerializer
+    
+class UpdatePlayer(generics.RetrieveUpdateDestroyAPIView):
+    queryset=Player.objects.all()
+    serializer_class=PlayerSerializer
+    
+class NpcAPIView(APIView):
+    def get(self,request):
+        npc=Npc.objects.all()
+        serializer=NpcSerializer(npc,many=True)
+        return Response(serializer.data)
+    
+    def post(self,request):
+        serializer=NpcSerializer(data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data,status.HTTP_201_CREATED)
+        return Response(serializer.errors,status.HTTP_400_BAD_REQUEST)
+
+serializer.py
+look like
+
+from rest_framework import serializers
+from .models import *
+
+class PlayerSerializer(serializers.ModelSerializer):
+    class Meta:
+        model=Player
+        fields='__all__'
+
+class NpcSerializer(serializers.ModelSerializer):
+    class Meta:
+        model=Npc
+        fields='__all__'
+for each model new serializer
+
+new path model like
+from django.urls import path
+from .views import *
+
+urlpatterns=[
+    path("Player",PlayerListCreateAPIView.as_view()),
+    path("Update/<int:pk>",UpdatePlayer.as_view()),
+    path("Npcview",NpcAPIView.as_view())
+] with function and as_view()
+
+
+in setting add rest_framework to installed apps
+
+ status codes
+
+404-not found
+500-internal server error
+400-bad request
+502-bad gateway
+200-ok
+201-created
+401-unauthorised
+403-forbidden
+429-too many request
+202-accepted
