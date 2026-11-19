@@ -1,7 +1,7 @@
 python -m venv env
 cd env/scripts/activate
 pip install Django
-python djangoadmin startproject projectname
+python django-admin startproject projectname
 cd projectname
 python manage.py startapp appname
 python manage.py makepreparations
@@ -15,6 +15,8 @@ in urlsiin project web,add include module, in urlpatterns, add path('',include("
 
 
 for links, 
+from .views import *
+
 path should be like path('home',home,name="home") and link like <a href="{% url 'home'%}">home</a>
  
 for tables,
@@ -61,9 +63,17 @@ to add to table via form,
 
 
 
+std=get_object_or_404(Students,id=id) to fetch an existing object
+std.delete() to delete
 
 
-
-
-
+<td>
+                    <a class="action-link"
+                       href="{% url 'update' i.id %}">Update</a>
+                </td>
+                <td>
+                    <form action="{% url 'delete' i.id %}" method="POST">
+                    {% csrf_token %}
+                    <button type="submit">Delete</button>
+for actions by id in this format for request.method post
 
